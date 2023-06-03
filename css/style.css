@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Montserrat:wght@100&display=swap');
 
+/* Configurações gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@
     /*overflow: hidden;*/
 }
 
+/* Tags e parametros para facilitar a programação do código e deixar mais organizado */
+
 :root {
     --color-color-primary-color: #34ffa9;
     --color-color-secondary-color: #262d36;
@@ -19,40 +23,44 @@
     --color-color-bnt-green-hover-color: #153612;
 
     font-family: 'Fira Code', monospace;
-
-    font-size: 62.5%;
 }
 
-body {
+/* Layout da página */
+
+#app {
     font-size: 100%;
     background-color: var(--color-color-background-color);
     color: var(--color-color-primary-color);
-}
-
-#app {
-    height: 100vh;
 
     display: grid;
+
     grid-template-rows: max-content 1fr max-content;
 }
+
+/* Configurações da Navbar */
 
 .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-size: 2.0rem;
+    font-size: 15px;
     padding-top: 0.45rem;
     padding-left: 2.06rem;
     padding-right: 1.17rem;
 }
 
+/* Logo que vai na navbar */
+
 .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    font-size: 30px;
     color: var(--color-color-primary-color);
 }
+
+/* Navbar e seus parametros*/
 
 .navbar {
     display: flex;
@@ -72,6 +80,8 @@ body {
     transition: 0.5s;
 }
 
+/* Botão que vai na Navbar para contato. */
+
 .btn-green {
     background-color: var(--color-color-btn-green-color);
 
@@ -85,12 +95,21 @@ body {
 .btn-green:hover {
     background-color: var(--color-color-primary-color);
     color: var(--color-color-bnt-green-hover-color);
+    font-weight: bold;
 }
+
+/* Container Global */
 
 .container {
     margin-top: 198px;
     margin-bottom: 290px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* Container de boas-vindas */
 
 .row-1 {
     display: flex;
@@ -105,7 +124,7 @@ body {
 }
 
 .row-1-escrito-titulo {
-    font-size: 64px;
+    font-size: 45px;
 }
 
 .row-1-escrito-subtitulo {
@@ -131,21 +150,209 @@ body {
 .row-1-escrito-btn:hover {
     background-color: var(--color-color-primary-color);
     color: var(--color-color-bnt-green-hover-color);
+    font-weight: bold;
     transition: 0.5s;
 }
 
-.row-1-escrito-logos {
+.row-1-escrito-icones {
+    display: flex;
+    margin-top: 118px;
+    gap: 42.16px;
+}
+
+.row-1-escrito-img {
+    width: 400px;
+    gap: 15px;
+    margin-left: 200px;
+}
+
+/* Container de Sobre mim */
+
+.row-2 {
+    margin-top: 354px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.row-2-escrito {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.row-2-escrito-titulo {
+    font-size: 55px;
+    color: var(--color-color-third-color);
+}
+
+.row-2-escrito-icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 37px;
+}
+
+.row-2-subtitulo-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 185px;
+    margin-top: 37px;
+
+    gap: 40px
+}
+
+.row-2-escrito-img {}
+
+.row-2-paragrafo {
+    color: var(--color-color-third-color);
+    font-size: 20px;
+    width: 800px;
+}
+
+/* Container de Projetos */
+
+.row-3 {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.row-3-escrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-3-escrito-titulo {
+    font-size: 55px;
+    color: var(--color-color-third-color);
+    margin-right: 185px;
+}
+
+.row-3-escrito-img {}
+
+.row-3-card-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-.row-1-escrito-img {
-    width: 400px;
+.row-3-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 130px;
 }
 
-.rodape {
-    border-top: 11px solid var(--color-color-primary-color);
-    width: 830px;
+.row-3-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #262D36;
+    border-radius: 10px;
+}
+
+.row-3-card-project {
+    height: 266px;
+}
+
+.row-3-card-tittle {
+    margin-top: 20px;
+
+    color: var(--color-color-third-color);
+    font-size: 40px;
+}
+
+.row-3-card-tittle:hover {
+    text-decoration: underline;
+
+    transition: 0.5s;
+}
+
+.row-3-card-desc {
+    width: 336px;
+
+    margin-top: 20px;
+
+    color: var(--color-color-third-color);
+}
+
+.row-3-card-more {
+    background-color: var(--color-color-btn-green-color);
+    color: var(--color-color-third-color);
+
+    font-size: 35px;
+
+    width: 100%;
+    height: 70px;
+
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 50px;
+
+    cursor: pointer;
+}
+
+.row-3-card-more:hover {
+    background-color: var(--color-color-primary-color);
+    color: var(--color-color-background-color);
+
+    transition: all 0.5s;
+}
+
+.row-3-card-more-project {
+    background-color: var(--color-color-btn-green-color);
+    color: var(--color-color-third-color);
+
+    font-size: 35px;
+
+    width: 500px;
+    height: 70px;
+
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 50px;
+
+    cursor: pointer;
+}
+
+/* Footer Web site */
+
+.row-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    padding: 32px;
+    border-top: 0.4px solid var(--color-color-primary-color);
+}
+
+.row-end-logo {
+    font-size: 35px;
+
+    padding: 35px;
+}
+
+.row-end-copy {
+
+    font-weight: bold;
+
+    color: var(--color-color-third-color);
 }
