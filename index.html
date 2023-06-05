@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
@@ -18,53 +19,52 @@
                 <a href="#" class="nav-link">/Home/</a>
                 <a href="#" class="nav-link">/Sobre/</a>
                 <a href="#" class="nav-link">/Projetos/</a>
-                <a href="#" class="nav-link btn-green">Contato /></a>
+                <a href="#" class="nav-link btn-green2">Contato /></a>
             </nav>
         </header>
         <main class="container">
-            <section class="row-1">
-                <div class="row-1-escrito">
-                    <h5 class="row-1-escrito-titulo">Prazer meu nome é Augusto</h5>
-                    <p class="row-1-escrito-subtitulo">Desenvolvedor Front-End</p>
-                    <a href="#" class="row-1-escrito-btn">Contato /></a>
-                    <div class="row-1-escrito-icones">
-                        <a href="#"><img src="./img/github.png" alt="Github" height="50"></a>
-                        <a href="#"><img src="./img/instagram.png" alt="Github" height="50"></a>
-                        <a href="#"><img src="./img/linkedin.png" alt="Github" height="50"></a>
+            <section class="row divisao">
+                <div class="conteudo">
+                    <h5 class="texto50">Prazer meu nome é Augusto</h5>
+                    <p class="sub-titulos">Desenvolvedor Front-End</p>
+                    <a class="btn-green">Contato /></a>
+                    <div class="icones">
+                        <a class="icones tamanhos" href="#"><img src="./img/github.png" alt="Github"></a>
+                        <a class="icones tamanhos" href="#"><img src="./img/instagram.png" alt="Github"></a>
+                        <a class="icones tamanhos" href="#"><img src="./img/linkedin.png" alt="Github"></a>
                     </div>
                 </div>
-                <img class="row-1-escrito-img" src="./img/logo.png" alt="Logo">
+                <img class="perfil-logo" src="./img/logo.png" alt="Logo">
             </section>
-            <section class="row-2">
-                <div class="row-2-escrito">
-                    <h1 class="row-2-escrito-titulo">Sobre mim</h1>
+            <section class="row">
+                <div class="div-row">
+                    <div class="conteudo-1">
+                        <h5 class="titulo texto50 branco">Sobre mim</h5>
+                    </div>
+                    <div class="listagem-paragrafos">
+                        <p class="paragrafo">Desde os meus 12 anos, tenho demonstrado interesse em programação e comecei
+                            a estudar Java. No entanto, logo percebi que
+                            estava com dificuldades para expandir meu conhecimento, o que acabou desanimando-me. Aos 17
+                            anos, decidi retomar os
+                            estudos e, até o ano passado, programava apenas como um hobby. Desde então, tenho me
+                            dedicado ao desenvolvimento de
+                            Front-End e adquiri algum conhecimento em Back-End. Atualmente, possuo proficiência nas
+                            seguintes linguagens:</p>
 
-                    <div class="row-2-escrito-icones">
-                        <a href="#"><img src="./img/html5.png" alt="HTML5" height="50"></a>
-                        <a href="#"><img src="./img/css3.png" alt="CSS3" height="50"></a>
-                        <a href="#"><img src="./img/javascript.png" alt="JAVASCRIPT" height="50"></a>
-                        <a href="#"><img src="./img/python.png" alt="PYTHON" height="50"></a>
+                    </div>
+                    <div class="icones">
+                        <a class="icones tamanhos" href="#"><img src="./img/html5.png" alt="HTML5"></a>
+                        <a class="icones tamanhos" href="#"><img src="./img/css3.png" alt="CSS3"></a>
+                        <a class="icones tamanhos" href="#"><img src="./img/javascript.png" alt="JAVASCRIPT"></a>
+                        <a class="icones tamanhos" href="#"><img src="./img/python.png" alt="PYTHON"></a>
                     </div>
                 </div>
-                <div class="row-2-subtitulo-titulo">
-                    <img class="row-2-escrito-img" src="./img/bar.png" alt="Bar" height="11" width="830">
-                    <p class="row-2-paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                        praesentium obcaecati autem quidem, magni veniam! Voluptates quia totam fugit natus est
-                        doloremque? Voluptate harum in dolores perferendis atque ipsam repellat.</p>
-                    <p class="row-2-paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                        praesentium obcaecati autem quidem, magni veniam! Voluptates quia totam fugit natus est
-                        doloremque? Voluptate harum in dolores perferendis atque ipsam repellat.</p>
-                    <p class="row-2-paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                        praesentium obcaecati autem quidem, magni veniam! Voluptates quia totam fugit natus est
-                        doloremque? Voluptate harum in dolores perferendis atque ipsam repellat.</p>
-                </div>
             </section>
-            <section class="row-3">
-                <div class="row-3-escrito">
-                    <h1 class="row-3-escrito-titulo">Projetos</h1>
-                    <img class="row-3-escrito-img" src="./img/bar.png" alt="Bar" height="11" width="830">
-                </div>
-                <div class="row-3-card-list">
+            <section class="row">
+                <div class="div-row">
+                    <div class="conteudo-1">
+                        <h1 class="titulo texto50 branco">Projetos</h1>
+                    </div>
                     <div class="row-3-cards">
                         <div class="row-3-card">
                             <img class="row-3-card-project" src="./img/project.png" alt="Project">
@@ -101,50 +101,56 @@
                 </div>
             </section>
 
-            <section class="row-4">
-                <div class="row-4-escrito">
-                    <h1 class="row-4-escrito-titulo">Experiências</h1>
-                    <img class="row-4-escrito-img" src="./img/bar.png" alt="Bar" height="11" width="830">
-                </div>
-                <div class="row-4-card">
-                    <img class="row-4-card-img" src="./img/codigo.jpg" alt="Codigo">
-                    <ul class="row-4-desc">
-                        <li>Hobby</li>
-                    </ul>
+            <section class="row">
+                <div class="div-row">
+                    <div class="conteudo-1">
+                        <h1 class="titulo texto50 branco">Experiências</h1>
+                    </div>
+                    <div class="listagem-experiencias">
+                        <ul class="row-4-desc">
+                            <li>Hobby</li>
+                            <li>RS Projetos</li>
+                            <li>Casa</li>
+                            <li>Home</li>
+                            <li>Escola</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <section class="row-5">
-                <div class="row-5-escrito">
-                    <h1 class="row-5-escrito-titulo">Contato</h1>
-                    <img class="row-5-escrito-img" src="./img/bar.png" alt="Bar" height="11" width="830">
-                </div>
-                <div class="row-5-card">
-                    <div class="row-5-information">
-                        <p class="row-5-desc">Entre em contato atraves dos contatos abaixo.</p>
-                        <h1 class="row-5-title">E-mail</h1>
-                        <p class="row-5-desc">augusto.srrosa@gmail.com</p>
-                        <h1 class="row-5-title">Telefones</h1>
-                        <p class="row-5-desc">(51) 9.9920-5355</p>
-                        <div class="row-5-icons">
-                            <a href="#"><img src="./img/github.png" alt="Github" height="50"></a>
-                            <a href="#"><img src="./img/instagram.png" alt="Github" height="50"></a>
-                            <a href="#" target="_blank"><img src="./img/linkedin.png" alt="Github" height="50"></a>
-                            <a href="https://wa.me/5551999205355?text=Augusto" target="_blank"><img
-                                    src="./img/whatsapp.png" alt="WhatsApp" height="50"></a>
-                        </div>
+            <section class="row">
+                <div class="div-row">
+                    <div class="conteudo-1">
+                        <h1 class="titulo texto50 branco">Contato</h1>
                     </div>
-                    <div class="row-5-form">
-                        <form action="" class="row-5-form-contat">
-                            <input class="row-5-form-input" type="text" placeholder="Nome Completo">
-                            <input class="row-5-form-input" type="email" placeholder="Seu e-mail">
-                            <input class="row-5-form-input" type="text" placeholder="Seu comentário">
-
-                            <div class="row-5-form-button-grid">
-                                <button class="row-5-form-button">Enviar /></button>
-                                <button class="row-5-form-button2"><i class="ph ph-folder"></i> Anexar /></button>
+                    <div class="contact-card">
+                        <div class="contact-information">
+                            <p class="contact-desc">Entre em contato atraves dos contatos abaixo.</p>
+                            <h1 class="contact-title">E-mail</h1>
+                            <p class="contact-desc">augusto.srrosa@gmail.com</p>
+                            <h1 class="contact-title">Telefones</h1>
+                            <p class="contact-desc">(51) 9.9920-5355</p>
+                            <div class="icones">
+                                <a class="icones tamanhos" href="#"><img src="./img/github.png" alt="Github"></a>
+                                <a class="icones tamanhos" href="#"><img src="./img/instagram.png" alt="Github"></a>
+                                <a class="icones tamanhos" href="#" target="_blank"><img src="./img/linkedin.png"
+                                        alt="Github"></a>
+                                <a class="icones tamanhos" href="https://wa.me/5551999205355?text=Augusto"
+                                    target="_blank"><img src="./img/whatsapp.png" alt="WhatsApp"></a>
                             </div>
-                        </form>
+                        </div>
+                        <div class="contact-form">
+                            <form action="" class="contact-form-contact">
+                                <input class="contact-form-input" type="text" placeholder="Nome Completo">
+                                <input class="contact-form-input" type="email" placeholder="Seu e-mail">
+                                <input class="contact-form-input" type="text" placeholder="Seu comentário">
+
+                                <div class="contact-form-button-grid">
+                                    <button class="contact-form-button">Enviar /></button>
+                                    <button class="contact-form-button2"><i class="ph ph-folder"></i> Anexar /></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

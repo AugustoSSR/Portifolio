@@ -35,7 +35,7 @@
 
     font-size: 100%;
 
-    height: auto;
+    width: 100%;
 
     grid-template-rows: max-content 1fr max-content;
 
@@ -48,10 +48,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-size: 15px;
-    padding-top: 0.45rem;
-    padding-left: 2.06rem;
-    padding-right: 1.17rem;
+    font-size: 18px;
+
+    width: 100%;
+
 }
 
 /* Logo que vai na navbar */
@@ -62,6 +62,8 @@
     font-weight: bold;
     font-size: 30px;
     color: var(--color-color-primary-color);
+
+
 }
 
 /* Navbar e seus parametros*/
@@ -86,7 +88,7 @@
 
 /* Botão que vai na Navbar para contato. */
 
-.btn-green {
+.btn-green2 {
     background-color: var(--color-color-btn-green-color);
 
     border: 0;
@@ -96,7 +98,7 @@
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
-.btn-green:hover {
+.btn-green2:hover {
     background-color: var(--color-color-primary-color);
     color: var(--color-color-bnt-green-hover-color);
     font-weight: bold;
@@ -105,39 +107,102 @@
 /* Container Global */
 
 .container {
-    margin-top: 198px;
-    margin-bottom: 290px;
 
+    display: grid;
+    grid: 150px auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+
+    width: 100%;
+
+    /*background-color: white;*/
+}
+
+.container>.divisao {
+    margin-bottom: 200px;
+    margin-top: 220px;
+}
+
+.container>.row {
+    /*background-color: black !important;*/
+    background-color: var(--color-color-background-color);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+
+.conteudo {
+    /* background-color: white; */
+}
+
+
+
+.div-row {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 100%;
 }
 
-/* Container de boas-vindas */
-
-.row-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-around;
-}
-
-.row-1-escrito {
+.conteudo-1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    border-top: 0.1px solid var(--color-color-primary-color);
 }
 
-.row-1-escrito-titulo {
-    font-size: 45px;
+.paragrafo {
+    color: var(--color-color-third-color);
+
+    margin-top: 15px;
 }
 
-.row-1-escrito-subtitulo {
+.listagem-paragrafos {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.listagem-experiencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.titulo:hover {
+    color: var(--color-color-primary-color);
+}
+
+.texto50 {
+    font-size: 50px;
+}
+
+.branco {
+    color: var(--color-color-third-color);
+}
+
+.sub-titulos {
     color: var(--color-color-third-color);
     font-size: 36px;
-    margin-bottom: 97px;
 }
 
-.row-1-escrito-btn {
+.btn-green {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,115 +214,40 @@
     color: var(--color-color-primary-color);
     font-size: 32px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+
+    margin-top: 18px;
 }
 
-.row-1-escrito-btn:hover {
+.btn-green:hover {
     background-color: var(--color-color-primary-color);
     color: var(--color-color-bnt-green-hover-color);
     font-weight: bold;
     transition: 0.5s;
 }
 
-.row-1-escrito-icones {
+.icones {
     display: flex;
-    margin-top: 118px;
-    gap: 42.16px;
+    gap: 25px;
+
+    margin-top: 15px;
 }
 
-.row-1-escrito-img {
+.icones a:hover {}
+
+.icones .tamanhos {
+    height: 50px;
+}
+
+.perfil-logo {
     width: 400px;
-    gap: 15px;
-    margin-left: 200px;
 }
 
-/* Container de Sobre mim */
+/* Container de Projetos  */
 
-.row-2 {
-    margin-top: 354px;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
-}
-
-.row-2-escrito {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-
-}
-
-.row-2-escrito-titulo {
-    font-size: 55px;
-    color: var(--color-color-third-color);
-}
-
-.row-2-escrito-icones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 37px;
-}
-
-.row-2-subtitulo-titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-left: 185px;
-    margin-top: 37px;
-
-    gap: 40px
-}
-
-.row-2-escrito-img {}
-
-.row-2-paragrafo {
-    color: var(--color-color-third-color);
-    font-size: 20px;
-    width: 800px;
-}
-
-/* Container de Projetos */
-
-.row-3 {
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    gap: 37px;
-}
-
-.row-3-escrito {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.row-3-escrito-titulo {
-    font-size: 55px;
-    color: var(--color-color-third-color);
-    margin-right: 185px;
-}
-
-.row-3-escrito-img {}
-
-.row-3-card-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .row-3-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 130px;
+    gap: 35px;
 }
 
 .row-3-card {
@@ -268,6 +258,8 @@
 
     background-color: #262D36;
     border-radius: 10px;
+
+    width: 340px;
 }
 
 .row-3-card-project {
@@ -338,36 +330,6 @@
 
 /* Container de experiencias */
 
-.row-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    gap: 37px;
-
-    margin-top: 200px;
-}
-
-.row-4-escrito {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.row-4-escrito-titulo {
-    font-size: 55px;
-    color: var(--color-color-third-color);
-    margin-right: 55px;
-}
-
-.row-4-escrito-img {}
-
-.row-4-card {
-    display: flex;
-    flex-direction: row;
-
-}
 
 .row-4-card-img {
     display: flex;
@@ -387,57 +349,22 @@
 }
 
 /* Container formulario de contato */
-
-.row-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    gap: 37px;
-
-    margin-top: 200px;
-
-    padding-left: 15px;
-
-    margin-right: 50px;
-}
-
-.row-5-escrito {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.row-5-escrito-titulo {
-    font-size: 55px;
-
-    color: var(--color-color-third-color);
-
-    margin-right: 186px;
-}
-
-.row-5-escrito-img {
-    display: block;
-    align-items: end;
-}
-
-.row-5-card {
+.contact-card {
     display: flex;
     flex-direction: row;
 }
 
-.row-5-information {
+.contact-information {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.row-5-title {
+.contact-title {
     font-size: 30px;
 }
 
-.row-5-desc {
+.contact-desc {
     width: 420px;
 
     color: var(--color-color-third-color);
@@ -447,7 +374,7 @@
     margin-bottom: 35px;
 }
 
-.row-5-icons {
+.contact-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -458,23 +385,23 @@
     color: var(--color-color-primary-color);
 }
 
-.row-5-icons a img {
+.contact-icons a img {
     color: var(--color-color-primary-color);
 }
 
-.row-5-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
 }
 
-.row-5-form-contat {
+.contact-form-contact {
     display: flex;
     flex-direction: column;
 }
 
-.row-5-form-input {
+.contact-form-input {
     width: 825px;
 
     height: 60px;
@@ -494,7 +421,7 @@
     font-size: 25px;
 }
 
-.row-5-form-input:focus {
+.contact-form-input:focus {
     background-color: var(--color-color-btn-green-color);
     color: var(--color-color-secondary-color);
 
@@ -504,7 +431,7 @@
     transition: 0.5s all linear;
 }
 
-.row-5-form-button-grid {
+.contact-form-button-grid {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -513,7 +440,7 @@
     gap: 12px;
 }
 
-.row-5-form-button {
+.contact-form-button {
     width: 90%;
     height: 50px;
 
@@ -526,7 +453,7 @@
 
 }
 
-.row-5-form-button:hover {
+.contact-form-button:hover {
     background-color: var(--color-color-secondary-color);
     color: var(--color-color-primary-color);
 
@@ -536,7 +463,7 @@
 }
 
 
-.row-5-form-button2 {
+.contact-form-button2 {
     width: 90%;
     height: 50px;
 
@@ -551,12 +478,10 @@
     cursor: pointer;
 }
 
-.row-5-form-button2:hover {
+.contact-form-button2:hover {
     border: 2px solid var(--color-color-primary-color);
 }
 
-
-.row-5-form-input::selection {}
 
 /* Footer Web site */
 

@@ -1,0 +1,278 @@
+@media screen and (max-width: 768px) {
+
+    /* Configurações gerais */
+    * {
+        overflow: auto;
+    }
+
+    /* Navbar */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    /* Container Global */
+    .container {
+        grid-template-rows: max-content auto auto auto;
+    }
+
+    .container>.divisao {
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+
+    .container>.row {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-1 {
+        border-top: none;
+    }
+
+    .listagem-paragrafos {
+        width: 100%;
+    }
+
+    .row-3-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .row-3-card {
+        width: 100%;
+    }
+
+    .row-3-card-more {
+        width: 100%;
+    }
+
+    .row-3-card-more-project {
+        width: 100%;
+    }
+
+    .listagem-experiencias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-4-card-img {
+        height: 200px;
+    }
+
+    .row-4-desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 15px;
+
+        padding-left: 0;
+        width: 100%;
+    }
+
+    /* Container formulario de contato */
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-information {
+        align-items: center;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-desc {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-icons a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-form {
+
+        margin-top: 18px;
+
+        align-items: center;
+    }
+
+    .contact-form-contact {
+        align-items: center;
+    }
+
+    .contact-form-input {
+        width: 100%;
+    }
+
+    .contact-form-button-grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .contact-form-button {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .contact-form-button2 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    /* Footer Web site */
+    .row-end-logo {
+        font-size: 28px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .listagem-paragrafos {
+        width: 100%;
+    }
+
+    .row-3-cards {
+        flex-direction: column;
+    }
+
+    .listagem-experiencias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-4-card-img {
+        height: 200px;
+    }
+
+    .row-4-desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 15px;
+
+        padding-left: 0;
+        width: 100%;
+    }
+
+    /* Container formulario de contato */
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-information {
+        align-items: center;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-desc {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-icons a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-form {
+
+        margin-top: 18px;
+
+        align-items: center;
+    }
+
+    .contact-form-contact {
+        align-items: center;
+    }
+
+    .contact-form-input {
+        width: 100%;
+    }
+
+    .contact-form-button-grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .contact-form-button {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .contact-form-button2 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    /* Footer Web site */
+    .row-end-logo {
+        font-size: 28px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .contact-information {
+        width: 1100px;
+    }
+}
